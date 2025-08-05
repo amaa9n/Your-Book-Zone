@@ -1,41 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Book Zone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(to right, #dfe9f3, #ffffff);
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: #333;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    a {
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #111;
-      color: white;
-      border-radius: 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      background: #333;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Book Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <h1>📚 Your Book Zone</h1>
-  <p>Access your free premium books below.</p>
-  <a href="premium/">Enter Premium Books Zone</a>
+  <header>
+    <h1>📚 Premium Books</h1>
+    <button id="toggleMode">🌓</button>
+  </header>
+
+  <input type="text" id="searchInput" placeholder="Search books..." />
+
+  <section class="book-list" id="bookList">
+    <!-- Example book card -->
+    <div class="book-card">
+      <img src="assets/thumbnail1.jpg" alt="Book cover">
+      <div>
+        <h3>Sample Book 1</h3>
+        <a href="reader.html?file=Premium Books/book1.pdf">📖 Read</a>
+        <a href="Premium Books/book1.pdf" download>⬇️ Download</a>
+      </div>
+    </div>
+    <!-- Add more book cards here -->
+  </section>
 </body>
 </html>
